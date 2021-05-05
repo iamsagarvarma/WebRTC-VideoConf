@@ -76,6 +76,7 @@ function captureUserMedia(callback) {
     var video = document.createElement('video');
     video.setAttribute('autoplay', true);
     video.setAttribute('controls', true);
+    video.muted = true;
     participants.insertBefore(video, participants.firstChild);
 
     getUserMedia({
